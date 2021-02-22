@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+         <!--Developed by Mohammed, Naimish, Sergii, Smita--> 
+         <!---Created in june 2020--> 
+    
+        <head>
+            <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aquagrill showcases the finest in mixed cuisine, complemented by
+            exceptional dining experience built on attention to every aspect of service, 
+            food and atmosphere.We have nice selection for appetizers, lunch, dinner and Desserts to cater for every special occation."> 
+            <title>Payment | AquaGrill</title>
+            <link rel="stylesheet" href="styles/home_style.css"/>   
+        </head>
+        <body>
+            <header>
+                <table id="table_header">
+                    <tr >
+                        <td ><img id="img_logo" src="images/logo.jpg" alt="Logo" ></td>
+                        <td >AquaGrill</td>
+                    </tr>
+                </table>
+            </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>              
+                
+              </ul>
+        </nav>
+        
+            <form id="online_payment_form" method="POST" action="thankyou.html" autocomplete="on">
+                <table id="table_reservation">
+                   
+
+                
+                  
+                    <tr>
+                        <td>
+                            <label for="payment_method">Payment Method</label>                            
+                        </td>
+                        <td>
+                            <select id="payment_method" class="inputs_background_color">
+                                <option value="visa">Visa</option>
+                                <option value="Mastercard">Mastercard</option>                                
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="name">Name *</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="name" size="20" maxlength="19" required="required" class="inputs_background_color" placeholder="Your Name"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="card_number">Card Number *</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="card_number" size="16" maxlength="16" 
+                            required="required" class="inputs_background_color"
+                            pattern="^(\d{4}[- ]){3}\d{4}|\d{16}$" placeholder="xxxx xxxx xxxx xxxx"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Expiration Date *</label> 
+                        </td>
+                        <td>
+                            <select class="inputs_background_color">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select class="inputs_background_color">
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>                               
+                            </select>
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="security_code">Security Code *</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="security_code" size="3" maxlength="3"
+                             required="required" class="inputs_background_color"
+                             pattern="^\d{3}$" placeholder="xxx"/>
+                        </td>
+                    </tr>
+                                                         
+                    <tr>
+                        <td>
+                            <input type="submit" value="Pay" class="inputs_background_color"/>                   
+                        </td>
+                        <td>
+                            <input type="reset" class="inputs_background_color"/>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+           
+            
+            
+        
+        <footer>
+            <h3>Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+        </footer>
+    </body>
+
+ 
+</html>

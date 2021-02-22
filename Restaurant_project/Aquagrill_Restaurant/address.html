@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--Developed by Mohammed, Naimish, Sergii, Smita--> 
+    <!---Created in june 2020--> 
+   
+        <head>
+            <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aquagrill showcases the finest in continental cuisine, complemented by
+                       exceptional dining experience built on attention to every aspect of service, 
+                      food and atmosphere.We have nice selection for appetizers, lunch, dinner and Desserts to cater for every special occation.
+                       For online reservation you can either contact us or reserve the place by filling the online form.">
+            <title>Address | AquaGrill</title>
+            <link rel="stylesheet" href="styles/home_style.css"/>   
+        </head>
+        <body>
+            <header>
+                <table id="table_header">
+                    <tr >
+                        <td ><img id="img_logo" src="images/logo.jpg" alt="Logo" ></td>
+                        <td >AquaGrill</td>
+                    </tr>
+                </table>
+            </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>              
+                
+              </ul>
+        </nav>
+        
+            <form id="online_address_form" method="POST" action="payment.html" autocomplete="on">
+                <table id="table_reservation">
+                    <tr>
+                        <td>
+                            <label for="name">Name *</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="name" size="20" maxlength="19" required="required" class="inputs_background_color" placeholder="Your Name"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Telephone *</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" size="10" maxlength="10" 
+                            required="required" 
+                            pattern="^^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" 
+                            placeholder="(xxx) xxx-xxxx"                     
+                            class="inputs_background_color">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">E-mail *</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" size="20" maxlength="19" required="required" class="inputs_background_color" placeholder="your_email@domain.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="street_number">Address *</label>
+                        </td>
+                        <td>
+                            <input type="text" id="street_number" size="20" maxlength="19" required="required" class="inputs_background_color" placeholder="Street No. Street Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City *</label>
+                        </td>
+                        <td>
+                            <input type="text" id="city" value="Montreal" size="20" maxlength="19" required="required" class="inputs_background_color">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="postal_code">Postal Code *</label>
+                        </td>
+                        <td>
+                            <input type="text" id="postal_code" size="6" maxlength="6" required="required" class="inputs_background_color" placeholder="XXX XXX">
+                        </td>
+                    </tr>                                                                            
+                    <tr>
+                        <td>
+                            <input type="submit" value="Proceed to Payment" class="inputs_background_color"/>                   
+                        </td>
+                        <td>
+                            <input type="reset" class="inputs_background_color"/>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            
+            
+        
+        <footer>
+            <h3>Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+        </footer>
+    </body>
+
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!--Developed by Mohammed, Naimish, Sergii, Smita--> 
+        <!---Created in june 2020--> 
+   
+        <head>
+            <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aquagrill showcases the finest in continental cuisine, complemented by
+                     exceptional dining experience built on attension to every aspect of service, 
+                    food and atmosphere. We have nice selection for appetizers, lunch, dinner and Desserts
+                    to cater for every special occation. Contact us for more information about reservations, orders and information"> 
+            <title>Contact Us | AquaGrill</title>
+            <link rel="stylesheet" href="styles/home_style.css"/>
+        </head>
+        <body>
+            <header>
+                <table id="table_header">
+                    <tr >
+                        <td ><img id="img_logo" src="images/logo.jpg" alt="Logo" ></td>
+                        <td >AquaGrill</td>
+                    </tr>
+                </table>
+            </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a class="active" href="contact_us.html">Contact Us</a></li>                              
+              </ul>
+        </nav>
+       <div id="contactus_body">
+        <section id="section_contactus"  class="body_margin">
+            <h1 style="color:red; font-family: Arial, Helvetica, sans-serif;">Don't be a stranger</h1>
+    <h1 style= "font-family:Arial,Helvetica,sans-serif;">just say hello</h1>
+    <form id="hotel_reservation_form" method="POST" action="thankyou.html" autocomplete="on">
+        <table style="border: 1px solid lightgray;">
+            <tr>
+                <td colspan="2" >
+                    Feel free to get in touch with us. <br /> We are always open to take feedback and <br /> make them oppurtunies for future developments.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Name">Name*</label>
+                </td>
+                <td>
+                    <input type="text" id="Name" maxlength="33" size="50" pattern="[a-zA-Z]+[ ][a-zA-Z]+{1,32}" 
+                    name="firstName_lastName" placeholder="Your Name" required="required"/>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label for="email">E-mail Address*</label>
+                </td>
+                <td>
+                    <input type="email" id="email" size="50" maxlength="30" required="required" placeholder="your_email@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone number*</label> </td>
+                <td>
+                    <input type="tel" id="phone" size="50" maxlength="10" required="required" name="phone" pattern="^^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" placeholder="(xxx) xxx-xxxx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City*</label>
+                </td>
+                <td>
+                    <input type="text" id="city" size="50" maxlength="15" required="required" placeholder="City" pattern="[A-Za-z]{1,15}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="feedback">Feedback*</label>
+                </td>
+                <td>
+                    <!--
+                    <textarea type="text" id="feedback" size="50" maxlength="300" required="required" placeholder="Message" minlength="30" style="height: 100px;" ></textarea>
+                    -->
+                    <textarea id="feedback" style="width: 100%;" rows="4" maxlength="150" minlength="30" required="required" class="inputs_background_color" placeholder="Your message..."></textarea>                                                           
+                </td>
+            </tr>
+         
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Would you recommend our Restaurant:</legend>
+                        <input type="radio" value="Yes" id="Yes" name="recommend">
+                        <label for="Yes">Yes</label>
+                        <input type="radio" value="No" id="No" name="recommend">
+                        <label for="No">No</label>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit_feedback" id="submit_feedback"
+                        value="Submit" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Need help? <br />
+                    <p><a href="mailto:help@aquagrill.com">help@aquagrill.com</a></p>
+                   
+                    
+                </td>
+                <td>
+                    Feel like talking <br/>
+                    +1 (514) 555 - 5555
+                </td>
+            </tr>                                
+        </table>
+    </form>
+    <div id="contact">
+        <h4>Find Us</h4>
+           <p>21 275 Lakeshore Road<br/>Sainte-Anne-de-Bellevue, Québec<br/>H9X 3L9 Canada<br/>
+               <a href="https://www.google.com/maps/place/21275+Lakeshore+Dr,+Sainte-Anne-de-Bellevue,+QC+H9X+3L9/@45.4064036,-73.9439198,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93845583f4869:0xf81ccc3a971d32b9!8m2!3d45.4064036!4d-73.9417311">Our Location on Map</a></p>
+    </div>
+        </section>
+    </div>
+        
+        <footer>
+            <h3>Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+        </footer>
+    </body>
+
+  
+</html>

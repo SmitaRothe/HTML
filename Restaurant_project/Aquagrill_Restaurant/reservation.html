@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+       <!--Developed by Mohammed, Naimish, Sergii, Smita--> 
+       <!---Created in june 2020--> 
+   
+        <head>
+            <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aquagrill showcases the finest in mixed cuisine, complemented by
+            exceptional dining experience built on attention to every aspect of service, 
+            food and atmosphere.We have nice selection for appetizers, lunch, dinner and Desserts to cater for every special occation.
+             For online reservation you can either contact us or reserve the place by filling the online form.">  
+            <title>Reservation  | AquaGrill</title>
+            <link rel="stylesheet" href="styles/home_style.css"/> 
+        </head>
+        <body >
+            <header>
+                <table id="table_header">
+                    <tr >
+                        <td ><img id="img_logo" src="images/logo.jpg" alt="Logo" ></td>
+                        <td >AquaGrill</td>
+                    </tr>
+                </table>
+            </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a class="active" href="reservation.html">Reservations</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>              
+                
+              </ul>
+        </nav>
+       
+            <form id="online_reservaion_form" method="POST" action="Thankyou.html" autocomplete="on" class="body_margin">
+                <table id="table_reservation">
+                    <tr>
+                        <td>
+                            <label for="name">Name *</label> 
+                        </td>
+                        <td>
+                            <input type="text" id="name" size="20" maxlength="20"   required="required" class="inputs_background_color" placeholder="Your Name"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Telephone *</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" maxlength="10" size="10"  
+                            required="required" 
+                            pattern="^^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+                            placeholder="(xxx) xxx-xxxx"
+                            class="inputs_background_color">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">E-mail *</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" size="20" maxlength="20"   required="required" class="inputs_background_color" placeholder="your_email@domain.com">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="no_guests">Number of Guests *</label>
+                        </td>
+                        <td>
+
+                            <input type="number" id="no_guests" min="1" max="25"
+                             required="required" class="inputs_background_color"
+                            value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="date">Date *</label>
+                        </td>
+                        <td>
+                            <input type="date" id="date" required="required" class="inputs_background_color" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="time">Time *</label>
+                        </td>
+                        <td>
+                            <select id="time" name="time" class="inputs_background_color">
+                                <option value="11:00am">11:00 AM</option>
+                                <option value="11:30am">11:30 AM</option>
+                                <option value="12:00am">12:00 AM</option>
+                                <option value="12:30am">12:30 AM</option>
+                                <option value="01:00pm">01:00 PM</option>
+                                <option value="01:30pm">01:30 PM</option>
+                                <option value="02:00pm">02:00 PM</option>
+                                <option value="02:30pm">02:30 PM</option>
+                                <option value="03:00pm">03:00 PM</option>
+                                <option value="03:30pm">03:30 PM</option>
+                                <option value="04:00pm">04:00 PM</option>
+                                <option value="04:30pm">04:30 PM</option>
+                                <option value="05:30pm">05:00 PM</option>
+                                <option value="05:30pm">05:30 PM</option>
+                                <option value="06:30pm">06:00 PM</option>
+                                <option value="06:30pm">06:30 PM</option>
+                                <option value="07:30pm">07:00 PM</option>
+                                <option value="07:30pm">07:30 PM</option>
+                                <option value="08:30pm">08:00 PM</option>
+                                <option value="08:30pm">08:30 PM</option>                                                       
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="special_requests">Special Requests</label>
+                        </td>
+                        <td>
+                            <textarea id="special_requests" cols="40" rows="4" maxlength="150" class="inputs_background_color">Your Requests...</textarea>                    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" class="inputs_background_color"/>                    
+                        </td>
+                        <td>
+                            <input type="reset" class="inputs_background_color"/>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            <img src="images/restaurant.gif" alt="Thank You"/>
+            
+            
+        
+        <footer>
+            <h3>Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+        </footer>
+    </body>
+
+
+   
+</html>

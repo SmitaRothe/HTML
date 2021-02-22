@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <!--Developed by Mohammed, Naimish, Sergii, Smita--> 
+    <!---Created in june 2020--> 
+    
+        <head>
+            <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Aquagrill showcases the finest in continental cuisine, complemented by
+            exceptional dining experience built on attension to every aspect of service, 
+            food and atmosphere.We have nice menus for appetizers, lunch, dinner and Desserts
+             which you must try.">
+            <title>Home | AquaGrill</title>
+            <link rel="stylesheet" href="styles/home_style.css"/>                          
+        </head>
+        <body>
+            <header>
+                <table id="table_header">
+                    <tr>
+                        <td><img id="img_logo" src="images/logo.jpg" alt="Logo" ></td>
+                        <td>AquaGrill</td>
+                    </tr>
+                </table>
+             </header>
+        
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Orders</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>              
+                    
+                </ul>
+            </nav>
+            <table id=table_home_body>
+                <tr>
+                    <td style="width: 30%;">
+                        <table id="table_hours"> 
+                            <tr >
+                                <td  colspan="3" style="text-align: center;"><img src="images/open_hours.jfif"
+                                alt="Opening Hours" title="Opening Hours"/></td>                                
+                            </tr>                           
+                            <tr >
+                                <td >Days</td>
+                                <td>Open</td>
+                                <td>Close</td>
+                            </tr>
+                            <tr >
+                                <td >Monday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr >
+                                <td >Tuesday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr >
+                                <td >Wednesday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr >
+                                <td >Thursday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr >
+                                <td >Friday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td >Saturday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            <tr >
+                                <td >Sunday</td>
+                                <td>11:00 AM</td>
+                                <td>09:00 PM</td>
+                            </tr>
+                            
+                 </table>
+                    </td>
+                    <td style="width: 70%;">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 5</div>
+                              <img src="images/g1.jpg" alt="Restaurant Image" style="width:100%">
+                             
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 5</div>
+                              <img src="images/g2.jpg" alt="Restaurant Image" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3 / 5</div>
+                              <img src="images/g3.jpg" alt="Restaurant Image" style="width:100%">
+                            
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 5</div>
+                                <img src="images/g4.jpg" alt="Restaurant Image" style="width:100%">
+                                
+                              </div>
+
+                              <div class="mySlides fade">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="images/g5.jpg" alt="Restaurant Image" style="width:100%">                               
+                              </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span>
+                              <span class="dot" onclick="currentSlide(4)"></span> 
+                              <span class="dot" onclick="currentSlide(5)"></span>  
+                            </div>
+                            
+                            <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+                    </td>
+                </tr>
+                <tr>                
+                    <td  colspan="2" style="text-align: center;">
+                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.0085609917314!2d-73.94122833330151!3d45.40561932042478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd807d74a59dcffcf!2sJohn%20Abbott%20College!5e0!3m2!1sen!2sca!4v1591657106409!5m2!1sen!2sca"
+                            width="600" height="400"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                    </td>
+                </tr>
+            </table>                        
+        
+        <footer>
+            <h3>Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+        </footer>
+    </body>
+
+</html>

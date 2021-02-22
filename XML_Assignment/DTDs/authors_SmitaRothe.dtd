@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Developed by Smita Rothe-->
+<!--Created on 30/05/2020-->
+
+<!--declare the root element authors which is a content element and it contains a content element author. authors element can contain one or more author elements-->
+<!ELEMENT authors (author)+>
+
+<!--declare the content element author which contains 3 data elements: authorName, phone?(optional), books. author element can contain one or more authorName and books elements -->
+<!ELEMENT author (authorName+, phone?, books+)>
+
+<!--declare the author attribute authorID which is mandatory-->
+<!--<!ATTLIST element_name attribute_name data_type default_value-->
+<!ATTLIST author 
+         authorID ID #REQUIRED>
+
+<!--declare the content element authorName which contains 3 data elements: firstName(mandatory), MiddleName?(optional), lastName(mandatory)-->
+<!ELEMENT authorName (firstName, MiddleName?, lastName)>
+
+<!--declare the authorName attribute title which is optional and has three options to choose from-->
+<!--<!ATTLIST element_name attribute_name data_type default_value-->
+<!ATTLIST authorName 
+            title ( Mr. | Mrs. | Ms. ) #IMPLIED>
+<!--declare the data elements firstName, MiddleName?, lastName which contains only character data-->
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT MiddleName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!--declare the data element phone which is an optional element-->
+<!ELEMENT phone (#PCDATA)>
+
+<!--declare the content element books which contains a content element book. books element can contain one or more book elements -->
+<!ELEMENT books (book)+>
+
+<!--declare the content element book which contain 2 data elements book_name snd publisher-->
+<!ELEMENT book (book_name, publisher)>
+
+<!--declare the book attributes: bookID and version-->
+<!--<!ATTLIST element_name attribute_name data_type default_value-->
+<!ATTLIST book
+          bookID ID #REQUIRED
+          version CDATA "1.1" >
+          
+<!ELEMENT book_name (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
